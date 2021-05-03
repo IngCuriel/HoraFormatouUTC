@@ -19,7 +19,7 @@ public class HoraFormatoUTCService {
 	public ResponseDto formatoHora(RequestDto body) {
 		ResponseDto responseHora=new ResponseDto();
 		ZoneId idZona = ZoneId.of("UTC");
-		LocalTime hora = LocalTime.parse(body.getTime()).plusHours(Long.parseLong(body.getTimezone()));
+		LocalTime hora = LocalTime.parse(body.getTime()).plusHours(body.getTimezone());
 		DateTimeFormatter formato = DateTimeFormatter.ofPattern("HH:mm:ss").withZone(idZona);
  		String horaFormateada = hora.format(formato);
 		responseHora.setTime(horaFormateada);
