@@ -9,6 +9,12 @@ Este API REST implemeta un servicio  POST para  obtener la hora en formato UTC d
  
 * Java
 
+### Dependencias:
+ 
+* lombok: libreria para optimizar codigo
+* Swagger v2.9.2 : herramienta que nos permite documentar y ejecutar APIs Web de forma interactiva
+* spring-boot-devtools
+
 ## Swagger
 
 https://formatohorautc.herokuapp.com/swagger-ui.html
